@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="customer" class="com.te.DemoSpringDemo.bean.Customer">
+	
+	<property name="id" value="1011"/>
+	<property name="name" value="Scott"/>
+	
+	<property name="products">
+	<list>
+	<value>OnePlus</value>
+	<value>RedmiNote 9 Pro</value>
+	<value>Apple</value>
+	<value>SamsungM21</value>
+	<value>RedmiNote9Pro</value>
+	</list>
+	</property>
+	
+	<property name="contacts">
+	<set>
+	<value>7676866303</value>
+	<value>9696866303</value>
+	<value>9696866303</value>
+	</set>
+	</property>
+	
+	
+	</bean>	
+
+</beans>
